@@ -29,5 +29,5 @@ allprojects {
         }
     }
 
-    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
 }

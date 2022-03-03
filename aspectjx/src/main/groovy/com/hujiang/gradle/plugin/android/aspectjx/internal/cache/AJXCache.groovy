@@ -18,7 +18,7 @@ import com.android.builder.model.AndroidProject
 import com.hujiang.gradle.plugin.android.aspectjx.AJXExtension
 import com.hujiang.gradle.plugin.android.aspectjx.internal.AJXUtils
 import com.hujiang.gradle.plugin.android.aspectjx.internal.model.AJXExtensionConfig
-import org.apache.commons.io.FileUtils
+import org.gradle.internal.impldep.org.apache.commons.io.FileUtils
 import org.gradle.api.Project
 
 /**

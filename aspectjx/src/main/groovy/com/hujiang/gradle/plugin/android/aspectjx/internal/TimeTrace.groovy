@@ -39,9 +39,9 @@ class TimeTrace implements TaskExecutionListener, BuildListener {
     private times = []
     private static final DISPLAY_TIME_THRESHOLD = 50
 
-    @Override
-    void buildStarted(Gradle gradle) {
-    }
+//    @Override
+//    void buildStarted(Gradle gradle) {
+//    }
 
     @Override
     void settingsEvaluated(Settings settings) {

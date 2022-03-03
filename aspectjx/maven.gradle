@@ -1,4 +1,4 @@
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 version=LIB_VERSION
 group = LIB_GROUP

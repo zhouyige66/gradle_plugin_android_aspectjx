@@ -19,11 +19,10 @@ import com.android.build.api.transform.Transform
 import com.android.build.api.transform.TransformException
 import com.android.build.api.transform.TransformInvocation
 import com.android.build.gradle.internal.pipeline.TransformManager
-import com.android.build.gradle.internal.pipeline.TransformTask
-import com.google.common.collect.ImmutableSet
 import com.hujiang.gradle.plugin.android.aspectjx.internal.cache.VariantCache
 import com.hujiang.gradle.plugin.android.aspectjx.internal.procedure.*
 import org.gradle.api.Project
+import org.gradle.internal.impldep.com.google.common.collect.ImmutableSet
 
 /**
  * class description here

@@ -16,11 +16,11 @@ package com.hujiang.gradle.plugin.android.aspectjx.internal.cache
 
 import com.android.build.api.transform.QualifiedContent
 import com.android.builder.model.AndroidProject
-import com.google.common.collect.ImmutableSet
+import org.gradle.internal.impldep.com.google.common.collect.ImmutableSet
 import com.google.gson.reflect.TypeToken
 import com.hujiang.gradle.plugin.android.aspectjx.internal.AJXUtils
 import com.hujiang.gradle.plugin.android.aspectjx.internal.model.JarInfo
-import org.apache.commons.io.FileUtils
+import org.gradle.internal.impldep.org.apache.commons.io.FileUtils
 import org.gradle.api.Project
 
 import java.util.concurrent.ConcurrentHashMap

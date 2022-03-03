@@ -14,14 +14,13 @@
  */
 package com.hujiang.gradle.plugin.android.aspectjx.internal
 
-import com.android.SdkConstants
 import com.android.build.api.transform.*
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonSyntaxException
 import com.hujiang.gradle.plugin.android.aspectjx.AJXPlugin
 import com.hujiang.gradle.plugin.android.aspectjx.internal.cache.VariantCache
-import org.apache.commons.io.FileUtils
+import org.gradle.internal.impldep.org.apache.commons.io.FileUtils
 import org.objectweb.asm.ClassReader
 import org.objectweb.asm.ClassWriter
 import org.slf4j.LoggerFactory
@@ -346,7 +345,8 @@ class AJXUtils {
             jarMerger.setFilter(new JarMerger.IZipEntryFilter() {
                 @Override
                 boolean checkEntry(String archivePath) throws JarMerger.IZipEntryFilter.ZipAbortException {
-                    return archivePath.endsWith(SdkConstants.DOT_CLASS)
+//                    return archivePath.endsWith(SdkConstants.DOT_CLASS)
+                    return archivePath.endsWith(".class")
                 }
             })
 

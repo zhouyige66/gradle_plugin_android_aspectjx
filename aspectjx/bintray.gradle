@@ -2,7 +2,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 apply plugin: 'java'
 apply plugin: 'signing'
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 group = LIB_GROUP
 version = LIB_VERSION
@@ -69,7 +69,7 @@ def getPomSignature = {
 
 install {
     repositories.mavenInstaller {
-// generates POM.xml with proper parameters
+        // generates POM.xml with proper parameters
         pom {
             project {
                 packaging 'jar'

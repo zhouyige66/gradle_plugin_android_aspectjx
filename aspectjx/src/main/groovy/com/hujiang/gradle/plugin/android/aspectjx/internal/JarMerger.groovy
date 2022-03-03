@@ -14,14 +14,10 @@
  */
 package com.hujiang.gradle.plugin.android.aspectjx.internal
 
-import com.android.annotations.NonNull
-import com.google.common.io.Closer
-import org.apache.commons.io.FileUtils
+import org.gradle.internal.impldep.com.google.common.io.Closer
+import org.gradle.internal.impldep.org.apache.commons.io.FileUtils
+import org.gradle.internal.impldep.org.eclipse.jgit.annotations.NonNull
 
-import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
-import java.io.IOException
 import java.util.jar.JarEntry
 import java.util.jar.JarOutputStream
 import java.util.zip.ZipEntry
